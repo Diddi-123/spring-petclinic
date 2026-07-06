@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sumukha47/spring-petclinic.git'
+               git branch: 'main', url: 'https://github.com/Diddi-123/spring-petclinic.git'
             }
         }
-        stage('build') {
+         stage('genrate a build') {
             steps {
-                sh 'mvn package'
+            sh 'mvn package'
             }
         }
     }
